@@ -1,4 +1,4 @@
-schema: http://localhost:8080/v1/graphql/graphql/graphql/graphql/
+schema: http://localhost:8080/v1/graphql/
 documents:  ./src/**/*.graphql
 overwrite: true
 generates:
@@ -12,3 +12,6 @@ generates:
       withHooks: true
       withHOC: false
       withComponent: false
+      scalars:
+        timestamptz: string
+        uuid: string
